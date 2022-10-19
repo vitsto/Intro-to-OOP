@@ -1,10 +1,10 @@
 public class Car {
-    String brand;
-    String model;
-    double engineVolume;
-    String color;
-    int productionYear;
-    String productionCountry;
+    private final String brand;
+    private final String model;
+    private final double engineVolume;
+    private final String color;
+    private final int productionYear;
+    private final String productionCountry;
 
     public Car(String brand, String model, double engineVolume, String color, int productionYear, String productionCountry) {
         this.brand = brand.equals("") ? "default" : brand;
@@ -13,10 +13,6 @@ public class Car {
         this.color = color.equals("") ? "белый" : color;
         this.productionYear = productionYear == 0 ? 2000 : productionYear;
         this.productionCountry = productionCountry.equals("") ? "default" : productionCountry;
-    }
-
-    public Car() {
-        this("", "", 0, "", 0, "");
     }
 
     public String getBrand() {

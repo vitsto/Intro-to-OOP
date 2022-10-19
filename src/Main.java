@@ -4,8 +4,7 @@ public class Main {
         Human anna = new Human("Анна", 1993, "Москва", "Методист образовательныъ программ");
         Human katya = new Human("Екатерина", 1994, "Калининград", "Продакт-менеджер");
         Human artem = new Human("Артем", 1995, "Москва", "Директор по развитию бизнеса");
-        Human someone = new Human();
-        Human someone2 = new Human("", -2000, "", "");
+        Human someone = new Human("", -2000, "", "");
 
         System.out.println(maxim);
         System.out.println(someone);

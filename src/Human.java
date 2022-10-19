@@ -1,8 +1,8 @@
 public class Human {
-    private String name;
-    private int yearOfBirth;
-    private String city;
-    private String post;
+    private final String name;
+    private final int yearOfBirth;
+    private final String city;
+    private final String post;
 
     private final String INFORMATION_NOT_DEFINED = "Информация не указана";
 
@@ -12,8 +12,6 @@ public class Human {
         this.city = city;
         this.post = post;
     }
-
-    public Human() {}
 
     public boolean isDefine(String str) {
         return !(str == null || str.equals(""));
